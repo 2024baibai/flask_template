@@ -34,3 +34,36 @@ python manage.py runserver #运行
 
 ![](https://ws1.sinaimg.cn/large/0074MymAgy1fz8a6oftzyj30y40a074j.jpg)
 
+
+
+**文件树**
+```
+flask_template/
+├── app #主目录
+│   ├── email.py #发送邮件的脚本
+│   ├── __init__.py
+│   ├── main #主视图文件夹
+│   │   ├── errors.py
+│   │   ├── forms.py
+│   │   ├── __init__.py
+│   │   └── views.py #主视图脚本
+│   ├── models.py #全局models脚本
+│   ├── static #静态文件目录
+│   │   └── favicon.ico
+│   └── templates #HTML模板目录（jinja2语法）
+│       ├── 404.html
+│       ├── 500.html
+│       ├── base.html
+│       ├── index.html
+│       └── mail
+│           ├── new_user.html
+│           └── new_user.txt
+├── config.py #配置文件
+├── LICENSE
+├── manage.py #运行脚本
+├── README.md
+├── requirements.txt #依赖包
+└── tests #单元测试目录
+    ├── __init__.py
+    └── test_basics.py
+```
