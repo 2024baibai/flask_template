@@ -15,10 +15,13 @@
 git clone https://github.com/abbeyokgo/flask_template.git #下载源码
 cd flask_template #切换到目录下
 pip install -r requirements.txt
-python manage.py db init #初始化数据库
-python manage.py db migrate #迁移
-python manage.py db upgrade #升级
-python manage.py runserver #运行
+#初始化
+export FLASK_APP=manage.py #linux
+set FLASK_APP=manage.py #windows
+flask db init #初始化数据库
+flask db migrate #迁移
+flask db upgrade #升级
+flask run #运行
 ```
 
 运行网站之后，提示
