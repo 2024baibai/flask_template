@@ -17,7 +17,8 @@ cd flask_template #切换到目录下
 pip install -r requirements.txt
 #初始化
 export FLASK_APP=manage.py #linux
-set FLASK_APP=manage.py #windows
+set FLASK_APP=manage.py #windows cmd
+$env:FLASK_APP = "manage"  #windows powershell
 flask db init #初始化数据库
 flask db migrate #迁移
 flask db upgrade #升级
